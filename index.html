@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hotels with Hot Offer</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+  }
+  /* event header */
+  .event-header {
+    position: relative;
+    padding: 20px;
+    background-color: #1C2F5A;
+    color: white;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .event-header .logo {
+    flex-basis: 40%;
+    text-align: center;
+  }
+  .event-header .content{
+    flex-basis: 60%;
+    text-align: left;
+  }
+  .event-header .content p{
+    margin: 2px;
+    font-size: 14px;
+  }
+  /* event header */
+  .mail-content{
+    padding: 20px 50px;
+  }
+  .mail-content p {
+    line-height: 1.6;
+  }
+  /*  */
+  .hot-offer,
+  .hotel-card {
+    background: linear-gradient(135deg, #ff4e50, #f9d423);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
+  .discount-badge {
+    background-color: #e53e3e;
+    color: white;
+    padding: 8px 16px;
+    display: inline-block;
+    margin: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+.rating {
+    color: #f6ad55;
+    margin: 10px 0;
+    font-size: 30px;
+  }
+
+  .info-item{
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 4px;
+  }
+.distance-list {
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+}
+.distance-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+}
+.price-section {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+.original-price {
+    text-decoration: line-through;
+    color: #1C2F5A;
+    font-weight: bold;
+    font-size: 18px;
+}
+.current-price {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.hot-offer-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e53e3e;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+  .hotel-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .hotel-card {
+    border: 1px solid #e2e8f0;
+    background: #1C2F5A;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+ 
+  .hotel-card .hotel-content .price-section .original-price{
+    color: #FAAD30;
+    font-weight: bold;
+  }
+
+
+.social-media{
+    padding: 20px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+  .footer {
+    background-color: #1a365d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 600px) {
+    .hotel-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="event-header">
+            <div class="logo">
+              <img src="Logo-new-512x512-1-100x100.png" alt="image" />
+            </div>
+            <div class="content">
+              <h3>ASD Market Week 2025</h3>
+              <div class="show-date">
+                <p>Las Vegas Convention Center</p>
+                <p>March 9 - 12 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mail-content">
+            <strong>Dear <q>First Name</q></strong>
+            <p>
+              Are you ready for ASD Market Week 2025 ? We have exclusive deals
+              waiting for you! Book your stay just steps away from the Las Vegas
+              Convention Center and enjoy discounts tailored just for exhibitors.
+              Don't wait!
+            </p>
+          </div>
+      <!-- Hot Offer -->
+      <div class="hot-offer">
+        <div class="hot-offer-content">
+            <span class="discount-badge">You Save + $30 per night</span>
+            <h2>Westgate Las Vegas </h2>
+            <div class="rating">*****</div>
+            <div class="info-item">
+                <strong> 3000 Paradise Rd, Las Vegas, NV 89109, United States</strong>
+            </div>
+            <ul class="distance-list">
+                <li class="distance-item">
+                    <strong>0.3 Miles from Expo Center</strong>
+                </li>
+            </ul>
+
+            <div class="price-section">
+                <h3>Special Rates:</h3>
+                <div class="original-price">Online price: $115</div>
+                <div class="current-price">Our Price: $85 + Tax</div>
+                <div class="rate-details">
+                    <p>• Room Type: Signature King Room</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <strong>Offer Includes:</strong>
+                <ul>
+                    <li>Complimentary breakfast</li>
+                </ul>
+            </div>
+
+            <div class="hot-offer-links">
+                <a href="#" class="hot-offer-button">BOOK NOW - LIMITED TIME OFFER!</a>
+                <a href="#" class="hot-offer-button">View Hotel</a>
+            </div>
+        </div>
+    </div>
+
+      <!-- Other Hotels -->
+      <div class="hotel-grid">
+        <!-- Hotel 1 -->
+        <div class="hotel-card">
+          <div class="hotel-content">
+            <span class="discount-badge">You Save + $41 per night</span>
+            <h2>Hilton Grand Vacations on the Las Vegas Strip</h2>
+            <div class="rating">****</div>
+            <div class="info-item">
+                <strong> 2650 Las Vegas Blvd S, Las Vegas, NV 89109, United States</strong>
+            </div>
+            <ul class="distance-list">
+                <li class="distance-item">
+                    <strong>0.7 Miles from Expo Center</strong>
+                </li>
+            </ul>
+
+            <div class="price-section">
+                <h3>Special Rates:</h3>
+                <div class="original-price">Online price: $200</div>
+                <div class="current-price">Our Price: $159 + Tax</div>
+                <div class="rate-details">
+                    <p>• Room Type: Studio 1 King</p>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;">
+                <strong>Offer Includes:</strong>
+                <ul>
+                    <li>Complimentary breakfast</li>
+                </ul>
+            </div>
+
+            <div class="hot-offer-links">
+                <a href="#" class="hot-offer-button">BOOK NOW - LIMITED TIME OFFER!</a>
+                <a href="#" class="hot-offer-button">View Hotel</a>
+            </div>
+          </div>
+        </div>
+      <!-- Terms and Contact -->
+      <div style="padding: 20px; text-align: center">
+        <strong style="font-size: 14px; color: #666">
+          *Offers valid until *|ENDDATE|*. Subject to availability.<br />
+          For assistance, contact us at *|PHONE|*
+        </p>
+      </div>
+      <div class="social-media">
+        <strong>reviews Here And Social Media Links</strong>
+      </div>
+      <div style="padding: 20px; text-align: center">
+        <p style="font-size: 14px; color: #666;line-height: 1.6;">
+            Disclaimer: This email is for informational purposes only and does not constitute an offer to contract, nor does it create any legal obligations for "TraviGuide". While TraviGuide may discuss upcoming events or tradeshows in this email, please note that TraviGuide is not directly affiliated with any such events. All logos and trademarks mentioned in this email belong to their respective owners and are used for informational purposes only.TraviGuide may tailor communications based on your past interactions or areas of interest to provide helpful information and relevant suggestions regarding TraviGuide's services. This is done with the legitimate intent of offering valuable content and opportunities, based on a genuine understanding of your potential interest.Should you wish to opt out of receiving further communications from TraviGuide, you may unsubscribe at any time by clicking the "unsubscribe" link at the bottom of this email or by emailing us directly
+        </p>
+      </div>
+
+      <div class="footer">
+        <img src="Logo-new-512x512-1-100x100.png" alt="">
+        <p>
+            Copyright (C) 2025 Traviguide. All rights reserved.
+        </p>
+        <p>
+          <a href="*|UNSUB|*" style="color: white">Unsubscribe</a> |
+          <a href="*|UPDATE_PROFILE|*" style="color: white"
+            >Update Preferences</a
+          >
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
